@@ -1,0 +1,54 @@
+{
+  "config": {
+    "test_size": 0.15,
+    "random_seed": 42,
+    "model_name": "bert-base-uncased",
+    "max_length": 256,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "dropout": 0.1
+  },
+  "timestamp": "2026-05-30T07:34:20.164301",
+  "best_epochs_used": {
+    "base": 3,
+    "class_weight": 3,
+    "eda": 3,
+    "gpt": 4
+  },
+  "test_results": {
+    "base": {
+      "val_loss": 0.32312101622422534,
+      "accuracy": 0.8924274593064402,
+      "precision": 0.8941548183254344,
+      "recall": 0.869431643625192,
+      "f1": 0.881619937694704,
+      "best_epoch": 3
+    },
+    "class_weight": {
+      "val_loss": 0.3343783106240961,
+      "accuracy": 0.8832271762208068,
+      "precision": 0.8704268292682927,
+      "recall": 0.8771121351766513,
+      "f1": 0.8737566947207345,
+      "best_epoch": 3
+    },
+    "eda": {
+      "val_loss": 0.8388929376999538,
+      "accuracy": 0.8662420382165605,
+      "precision": 0.8586956521739131,
+      "recall": 0.8494623655913979,
+      "f1": 0.8540540540540541,
+      "best_epoch": 3
+    },
+    "gpt": {
+      "val_loss": 0.7001108852693707,
+      "accuracy": 0.8726114649681529,
+      "precision": 0.8755980861244019,
+      "recall": 0.8433179723502304,
+      "f1": 0.8591549295774648,
+      "best_epoch": 4
+    }
+  }
+}
