@@ -38,7 +38,7 @@ Augmented data is applied only to training folds to prevent data leakage. Report
 | GPT-4o-mini | 0.8592 | 0.8726 |
 | EDA | 0.8541 | 0.8662 |
 
-이 데이터셋(클래스 비율 54:46)에서는 데이터 증강이 baseline 대비 유의한 성능 향상을 보이지 않았습니다. 자세한 수치는 `results/` 폴더의 JSON 파일을 참고하세요.
+이 데이터셋(클래스 비율 54:46)에서는 데이터 증강이 baseline 대비 유의한 성능 향상을 보이지 않았습니다. 자세한 수치는 results의 JSON 파일을 참고하세요.
 
 For this dataset (class ratio 54:46), data augmentation did not yield significant improvement over the baseline. See the JSON files in `results/` for detailed metrics.
 
@@ -98,7 +98,3 @@ python review_05_heldout_best.py
 - `SR`, `RI`, `RS`, `RD`: EDA 증강 텍스트 (각 연산별)
 
 ---
-
-## 참고 / Notes
-
-본 코드는 데이터 누수 제거, 통계 검정, held-out test 추가 등 실험 설계를 보완하여 재구성한 버전입니다.
